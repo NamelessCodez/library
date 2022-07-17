@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="srcipt.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <table>
@@ -14,8 +15,35 @@
             <th>Author</th>
             <th>Pages</th>
             <th>Read Status</th>
+            <th></th>
         </tr>
     </table>
-    <button>New Book</button>
+    <button class="input-button">New Book</button>
+    <form action="" id="book-info">
+        <div>
+            <label for="title">
+                TITLE
+                <input type="text" name="title" id="title">
+            </label>
+        </div>
+        <div>
+            <label for="author">
+                AUTHOR
+                <input type="text" name="author" id="author">
+            </label>
+        </div>
+        <div>
+            <label for="pages">
+                PAGES
+                <input type="number" name="pages" id="pages">
+            </label>
+        </div>
+        <div>
+            <label for="read">
+                READ STATUS
+                <input type="checkbox" name="read" id="read">
+            </label>
+        </div>
+    </form>
 </body>
 </html>
